@@ -1,0 +1,69 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- External css -->
+    <link rel="stylesheet" href="{% static 'oro/css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <div class='container-fluid containerfull'>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a href="/" class="navbar-brand font-weight-bold">AEDC
+                <p>Purv Sainik Ek Samaan</p></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+                    <span class="navbar-toggler-icon"> </span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mr-3">
+                            <a href="/" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a href="OrganisationChart/" class="nav-link">Organisation Chart</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a href="Event/" class="nav-link">Event</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a href="Gallery/" class="nav-link">Gallery</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a href="About/" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a href="Contactus/" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar end -->
+    {% block body %}
+ 
+    {% endblock %}
+    <!-- footer start --> 
+    <footer class="footer container-fluid text-center text-white bg-dark pt-3" style="line-height:1.2px !important; height:50px; margin-top: 40px">
+        <p> <span>AEDC</span></p>
+        <p class="pt-0">Copyright © 2020 AEDC. All rights reserved</p>
+    </footer>
+    <!-- footer end -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
